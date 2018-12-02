@@ -7,7 +7,7 @@ The source and RTL files coming from thales-risc-v-registers-router, thales-risc
 The modifications of the Rocket-chip generator in the thales-risc-v-chisel-project are released under the BSD 3 clauses.
 The rocket-chip generator is located at https://github.com/freechipsproject/rocket-chip.
 The solution parts of the thales-risc-v-vivado and the bistream it generates are released under the BSD 3 clauses.
-Modifications in the ultrascale linux, u-boot, zephyrOS and openOCD are released under GNU GPL v2 License.
+Modifications in the UltraScale+ linux, U-Boot, ZephyrOS and OpenOCD are released under GNU GPL v2 License.
 
 ## Thanks
 
@@ -15,9 +15,9 @@ We would like to thank Antmicro for the successful collaboration on this project
 
 ## Running the demo straight away
 
-This README file helps you regenerate the full project. For that you will need 
+This README file helps you regenerate the full project. For that you will need:
 - chisel tools
-- Vivado licence for the Ultrascale+
+- Vivado licence for the UltraScale+
 - riscv-tools
 - zephyr-sdk
 
@@ -53,15 +53,15 @@ The resulting bitstream should be located in thales-risc-v-vivado/project_1/proj
 
 ## US+ Processing system software
 
-If you want to regenerate the bootloader, the kernel and the Risc-V control software you can follow the instructions in **RISC-V-demonstrator--docs.pdf** *5.1 US+ Processing system software* 
+If you want to regenerate the bootloader, the kernel and the RISC-V control software you can follow the instructions in **RISC-V-demonstrator--docs.pdf** - *5.1 US+ Processing system software* 
 
-## Riscv-V software
+## RISC-V software
 
-The Risc-V software consists of a ZephyrOS sample named im_alive. To re-generate it you will need to install the zephy-sdk at https://docs.zephyrproject.org/latest/getting_started/installation_linux.html
-After that, the `./make_im_alive.sh` script should correctly generate the Risc-V executable. It will be located at `riscv-zephyr/samples/im_alive/build/am_ft_devkit/zephyr/zephyr.elf`.
+The RISC-V software consists of a ZephyrOS sample named im_alive. To re-generate it you will need to install the zephyr-sdk at https://docs.zephyrproject.org/latest/getting_started/installation_linux.html
+After that, the `./make_im_alive.sh` script should correctly generate the RISC-V executable. It will be located at `riscv-zephyr/samples/im_alive/build/am_ft_devkit/zephyr/zephyr.elf`.
 
 ## SD card generation
 
-To flash the SD card for the US+ target, you can use the instructions at **RISC-V-demonstrator--docs.pdf**   *6.1 Preparing the SD card*
+To flash the SD card for the US+ target, you can use the instructions at **RISC-V-demonstrator--docs.pdf** - *6.1 Preparing the SD card*
 
 
